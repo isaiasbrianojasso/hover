@@ -1,0 +1,64 @@
+.container{
+   background: #ffffff;
+   width:94%;
+   padding: 3% 3% 6% 3%;
+   font-family: "Tahoma",sans-serif;
+ }
+ 
+ .column{
+   width:48%;
+   padding:1%;
+   float:left;
+   position:relative;
+ }
+ 
+ .clear{
+   clear:both;
+ }
+ 
+ .column img{
+   width:100%;
+ }
+ 
+ .overlay {
+     width: 76%;
+     padding: 50px 10%;
+     height: 176px;
+     /*R G B (51,64,84)*/
+     background: rgba(5, 102, 248, 0.53);
+     text-align: center;
+     position: absolute;
+     top: 67px;
+     opacity:0;
+     cursor:pointer;
+     transition: all ease-in 0.5s;
+ }
+ 
+ .overlay:hover{
+   opacity:1;
+ }
+ 
+ .overlay p{
+   text-transform:uppercase;
+   font-size:25px;
+   color:white;
+ }
+ 
+ .overlay span{
+   font-size:15px;
+   text-transform: none;
+   position:absolute;
+   bottom:0px;
+   color:gray;
+   width:100%;
+   left: 10px;
+   opacity:0;
+   transition: all ease-in 0.5s;
+ }
+ 
+ .overlay p:hover + span{
+   opacity:1;
+   bottom:-60px;
+ }
+ 
+ 
